@@ -1,4 +1,4 @@
-FROM golang
+FROM golang:1-alpine AS build
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk add git
 RUN go get github.com/revel/cmd/revel
