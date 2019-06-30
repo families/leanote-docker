@@ -5,7 +5,7 @@
 ## Build （非必须）
 docker build --build-arg HTTPS_PROXY=<编译使用的代理服务器> -t zxfishhack/leanote .
 
-docker build -t userbo/leanote .
+使用： docker build -t userbo/leanote .
 
 ## Use
 运行环境要求：docker、docker-compose
