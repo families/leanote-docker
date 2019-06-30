@@ -1,7 +1,4 @@
-FROM golang:1-alpine AS build
-ARG HTTPS_PROXY
-ENV https_proxy=$HTTPS_PROXY
-RUN env
+FROM golang
 RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk add git
 RUN go get github.com/revel/cmd/revel
